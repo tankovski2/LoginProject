@@ -1,0 +1,31 @@
+﻿@model Login.Client.Models.UserViewModel
+@{
+    ViewBag.Title = "Sign Up";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>Please enter your username and password</h3>
+<br />
+
+<div class="row form-container">
+    @Html.EditorForModel()
+    <input type="submit" value="Sign up" class="btn btn-pink" id="signUp-btn" />
+</div>
+<div id="errors">
+    @Html.ValidationSummary(false)
+</div>
+
+@section scripts{
+
+    <script>
+        $(function () {
+
+            $("#signUp-btn").on("click", function () {
+                var url = @Html.Raw(HttpUtility.JavaScriptStringEncode(Url.Content("~/"), true)) + "Account/SignUp";
+                LoginClient.Persister.request(url);
+            })
+        })
+    </script>
+}
+

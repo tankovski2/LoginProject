@@ -1,0 +1,45 @@
+﻿@model Login.Client.Models.UserViewModel
+@using Cryptography;
+@{
+    ViewBag.Title = "Login";
+    if (Model!=null)
+    {
+        if (!string.IsNullOrWhiteSpace(Model.Password))
+        {
+            if (ViewBag.isHeshed!=null && ViewBag.isHeshed == true)
+            {
+                RijndaelAlg hasher = new RijndaelAlg();
+                Model.Password = hasher.Decrypt(HttpUtility.UrlDecode(Model.Password));
+                Model.UserName = HttpUtility.UrlDecode(Model.UserName);
+            }
+        }
+    }
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>Please enter your username and password</h3>
+<br />
+
+<div class="row form-container">
+
+    @Html.EditorForModel()
+
+    <input type="submit" value="Login" class="btn btn-pink" id="login-btn" />
+</div>
+<div id="errors">
+    @Html.ValidationSummary(false)
+</div>
+
+@section scripts{
+
+    <script>
+        $(function () {
+            $("#login-btn").on("click", function () {
+                var url = @Html.Raw(HttpUtility.JavaScriptStringEncode(Url.Content("~/"), true)) + "Account/Login";
+                LoginClient.Persister.request(url);
+            })
+        })
+    </script>
+}
+

@@ -1,0 +1,9 @@
+﻿@model Login.Client.Models.UserDisplayViewModel
+@{
+    ViewBag.Title = "UserPage";
+}
+@using Login.Client.Helpers;
+
+<div>
+   @Html.UserInfo(Model)
+</div>

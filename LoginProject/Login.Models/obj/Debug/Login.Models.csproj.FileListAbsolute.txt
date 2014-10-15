@@ -1,0 +1,14 @@
+E:\Projects\LoginProject\Login.Models\bin\Debug\Login.Models.dll
+E:\Projects\LoginProject\Login.Models\bin\Debug\Login.Models.pdb
+E:\Projects\LoginProject\Login.Models\obj\Debug\Login.Models.dll
+E:\Projects\LoginProject\Login.Models\obj\Debug\Login.Models.pdb
+C:\Users\el_b__000\Desktop\LoginProject\LoginProject\Login.Models\bin\Debug\Login.Models.dll
+C:\Users\el_b__000\Desktop\LoginProject\LoginProject\Login.Models\bin\Debug\Login.Models.pdb
+C:\Users\el_b__000\Desktop\LoginProject\LoginProject\Login.Models\obj\Debug\Login.Models.csprojResolveAssemblyReference.cache
+C:\Users\el_b__000\Desktop\LoginProject\LoginProject\Login.Models\obj\Debug\Login.Models.dll
+C:\Users\el_b__000\Desktop\LoginProject\LoginProject\Login.Models\obj\Debug\Login.Models.pdb
+E:\Projects\LoginProjectDocumened\LoginProject\LoginProject\Login.Models\bin\Debug\Login.Models.dll
+E:\Projects\LoginProjectDocumened\LoginProject\LoginProject\Login.Models\bin\Debug\Login.Models.pdb
+E:\Projects\LoginProjectDocumened\LoginProject\LoginProject\Login.Models\obj\Debug\Login.Models.dll
+E:\Projects\LoginProjectDocumened\LoginProject\LoginProject\Login.Models\obj\Debug\Login.Models.pdb
+E:\Projects\LoginProjectDocumened\LoginProject\LoginProject\Login.Models\obj\Debug\Login.Models.csprojResolveAssemblyReference.cache

@@ -1,0 +1,11 @@
+﻿@model Login.Client.Models.ErrorModel
+<h2>Error</h2>
+<div class="col-lg-4">
+    <img src="~/Images/error.png" />
+</div>
+<div class="col-lg-8">
+    <h1 class="text-danger">A general error has occurred</h1>
+    <h2 class="text-danger">@Html.Raw(Model.Exception.Message)</h2>
+</div>
+
+
